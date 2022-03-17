@@ -13,7 +13,7 @@ h1 {
     overflow: auto;
 }
 
-/* Header Stuff */
+/* ******Header Stuff****** */
 #header {
     display: flex;
     justify-content: space-between;
@@ -41,9 +41,9 @@ h1 {
     font-size: 3vh;
 }
 
-/* Main Stuff */
+/* ******Main Stuff****** */
 
-/* Intro */
+/* Intro Section */
 #intro {
     background-image: url('https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1522&q=80');
     text-align: center;
@@ -51,6 +51,63 @@ h1 {
 
 #intro-header {
     color: #f9f9f3;
-    font-size: 4em;
-    padding: 20vh 60vh;
+    font-size: 5em;
+    padding: 15%;
+}
+
+/* About Section */
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+}
+
+#about-header {
+    font-size: 3vw;
+    padding-top: 1em;
+}
+
+#about-info {
+    font-size: 2vw;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+/* Pricing section */
+#pricing {
+    display: flex;
+    justify-content: space-around;
+    background-color: #693c27;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.pricing-card {
+    width: 20%;
+    border-radius: 5%;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    height: 50vh;
+    width: 15vw;
+    background-color: #f9f9f3;
+}
+
+@media (max-width: 800px) {
+    #pricing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    .pricing-card {
+        width: 70%;
+        height: auto;
+        margin: 2.5%;
+    }
 }
