@@ -16,9 +16,9 @@
         </figure>
         <nav id="nav-bar">
             <ul id="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -56,17 +56,19 @@
         </section>
         <section id="contact">
             <h1 id="contact-header">Stay in touch for more CaffeInna. Sign in for our newsletter</h1>
-            <form id="form">
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
                 <div id="email-form">
                     <label id="email-label" for="email">Email</label>
                     <input type="email" name="email" id="email" placeholder="Email..." required>        
                 </div>
-                <button type="submit" id="submit"><a id="submit-link" href="https://www.freecodecamp.com/email-submit">Submit</a></button>
+                <button type="submit" id="submit"><a id="submit-link">Submit</a></button>
             </form>
         </section>
     </main>
     <footer id="footer">
         <h5 id="footer-heading">CaffeInna. Made by Oscar Saltijeral. 2022</h5>
     </footer>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
